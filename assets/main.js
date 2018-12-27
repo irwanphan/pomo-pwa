@@ -34,7 +34,8 @@ var pomodoro = {
       this.minutes = mins;
       this.seconds = secs;
       this.started = started;
-      this.fillerIncrement = 200/(this.minutes*60);
+      // this.fillerIncrement = 200/(this.minutes*60);
+      this.fillerIncrement = 100/(this.minutes*60);
       this.fillerWidth = 0;  
     },
     startWork: function() {
@@ -60,7 +61,8 @@ var pomodoro = {
       this.minutesDom.innerHTML = this.toDoubleDigit(this.minutes);
       this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
       this.fillerWidth = this.fillerWidth + this.fillerIncrement;
-      this.fillerDom.style.width = this.fillerWidth + 'px';
+      // this.fillerDom.style.width = this.fillerWidth + 'px';
+      this.fillerDom.style.width = this.fillerWidth + '%';
     },
     intervalCallback : function(){
       if(!this.started) return false;
