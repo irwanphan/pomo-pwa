@@ -1,3 +1,6 @@
+// add sound
+var sound = new Audio("https://freesound.org/data/previews/316/316847_4939433-lq.mp3");
+
 var pomodoro = {
     started : false,
     minutes : 0,
@@ -42,7 +45,7 @@ var pomodoro = {
       this.resetVariables(25, 0, true);
     },
     startShortBreak : function(){
-      this.resetVariables(5, 0, true);
+      this.resetVariables(1, 0, true);
     },
     startLongBreak : function(){
       this.resetVariables(15, 0, true);
