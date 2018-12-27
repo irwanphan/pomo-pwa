@@ -1,35 +1,44 @@
-.container{
-  width: 100%
+html {
+  font-family: Roboto, "Segoe UI", Lato, Arial
+}
+
+body {
+  background-color: #a0cdff;
+}
+
+.container {
+  width: 100%;
+  position: relative;
   max-width: 480px;
   margin: 20px auto;
   padding: 20px;
   text-align: center;
 }
 
-#timer{ 
-  color:#f00; 
-  font-size:50px; 
-  margin:10px auto;
-  border : 5px solid red;
-  border-radius:50%;
-  width:200px;
-  height:200px;
-  overflow:hidden;
-  position:relative;
+.timer { 
+  color: #f00; 
+  font-size: 50px; 
+  margin: 10px auto 24px;
+  border: 2px solid red;
+  border-radius: 16px;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor:default;
+  cursor: default;
 }
 
-#time{
+#time {
   margin-top:70px;
   z-index : 1;
   position:relative;
 }
 
-#filler{
+#filler {
   background : #ddffcc;
   height: 0px;
   width: 200px;
@@ -37,27 +46,16 @@
   bottom:0;
 }
 
-#buttons button { 
-  background:#4da6ff; 
-  border:none; 
-  color:#fff; 
-  cursor:pointer; 
-  padding:5px; 
-  width:90px; 
-  margin:10px auto;
-  font-size:14px;
-  height : 50px;
-  border-radius : 50px;
-}
-
-#buttons button#shortBreak{
-  background : #0c0;
-}
-
-#buttons button#longBreak{
-  background : #080;
-}
-
-#buttons button#stop{
-  background : #f00;
+.button { 
+  background: #4da6ff; 
+  border: none; 
+  color: #fff; 
+  cursor: pointer; 
+  padding: 8px; 
+  display: block;
+  width: 100%; 
+  margin: 10px auto;
+  font-size: 14px;
+  height: 50px;
+  border-radius: 16px;
 }
