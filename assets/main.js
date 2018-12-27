@@ -2,7 +2,8 @@ var pomodoro = {
     started : false,
     minutes : 0,
     seconds : 0,
-    fillerHeight : 0,
+    // fillerHeight : 0,
+    fillerWidth : 0,
     fillerIncrement : 0,
     interval : null,
     minutesDom : null,
@@ -34,7 +35,7 @@ var pomodoro = {
       this.seconds = secs;
       this.started = started;
       this.fillerIncrement = 200/(this.minutes*60);
-      this.fillerHeight = 0;  
+      this.fillerWidth = 0;  
     },
     startWork: function() {
       this.resetVariables(25, 0, true);
@@ -58,8 +59,8 @@ var pomodoro = {
     updateDom : function(){
       this.minutesDom.innerHTML = this.toDoubleDigit(this.minutes);
       this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
-      this.fillerHeight = this.fillerHeight + this.fillerIncrement;
-      this.fillerDom.style.height = this.fillerHeight + 'px';
+      this.fillerWidth = this.fillerWidth + this.fillerIncrement;
+      this.fillerDom.style.width = this.fillerWidth + 'px';
     },
     intervalCallback : function(){
       if(!this.started) return false;
@@ -77,7 +78,7 @@ var pomodoro = {
     },
     timerComplete : function(){
       this.started = false;
-      this.fillerHeight = 0;
+      this.fillerWidth = 0;
     }
 };
 window.onload = function(){

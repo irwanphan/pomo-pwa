@@ -2,6 +2,10 @@ html {
   font-family: Roboto, "Segoe UI", Lato, Arial
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #a0cdff;
 }
@@ -9,9 +13,9 @@ body {
 .container {
   width: 100%;
   position: relative;
-  max-width: 480px;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 420px;
+  margin: 16px auto;
+  padding: 16px;
   text-align: center;
 }
 
@@ -39,11 +43,13 @@ body {
 }
 
 #filler {
-  background : #ddffcc;
-  height: 0px;
-  width: 200px;
-  position:absolute;
-  bottom:0;
+  background : #effeef;
+  /*height: 0px;*/
+  height: 60px;
+  /*width: 200px;*/
+  width: 0px;
+  position: absolute;
+  left: 0;
 }
 
 .button { 
@@ -55,7 +61,10 @@ body {
   display: block;
   width: 100%; 
   margin: 10px auto;
-  font-size: 14px;
+  font-size: 20px;
   height: 50px;
   border-radius: 16px;
+}
+.button:hover, .button:active, .button:focus {
+  background-color: #49a0ff;
 }
