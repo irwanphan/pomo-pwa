@@ -36,10 +36,14 @@ body {
   cursor: default;
 }
 
-#time {
-  margin-top:70px;
-  z-index : 1;
-  position:relative;
+.time {
+  margin-top: 80px;
+  z-index: 1;
+  position: relative;
+  font-size: 48px;
+  font-weight: 500;
+  color: #f00;
+  letter-spacing: 4px;
 }
 
 #filler {
