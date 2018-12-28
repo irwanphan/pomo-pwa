@@ -1,10 +1,9 @@
-const staticCacheName = 'pomo-cache-v1.07';
+const staticCacheName = 'pomo-cache-v1.14';
 const filesToCache = [
     '.',
     'index.html',
     'assets/main.css',
-    'assets/main.js',
-    'https://freesound.org/data/previews/316/316847_4939433-lq.mp3'
+    'assets/main.js'
 ];
 
 self.addEventListener('install', event => {

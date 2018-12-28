@@ -65,9 +65,10 @@ var pomodoro = {
       this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
       this.fillerWidth = this.fillerWidth + this.fillerIncrement;
       // this.fillerDom.style.width = this.fillerWidth + 'px';
-      this.fillerDom.style.width = this.fillerWidth + '%';
-      console.log(this.fillerWidth);
-      if (this.fillerWidth >= 100) {
+      let incremented = parseFloat(this.fillerWidth.toFixed(4));
+      this.fillerDom.style.width = incremented + '%';
+      console.log(incremented);
+      if (incremented >= 100) {
         sound.play();
       }
     },

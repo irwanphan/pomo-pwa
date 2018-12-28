@@ -47,9 +47,9 @@
   </div>
 
   <script type="text/javascript">
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      console.log("This is running as standalone.");
-    }
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      console.log(registrations);
+    });
   </script>
   <script type="text/javascript" src="assets/main.js"></script>
 </body>
