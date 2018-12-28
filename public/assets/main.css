@@ -15,7 +15,7 @@ body {
   position: relative;
   max-width: 420px;
   margin: 16px auto;
-  padding: 16px;
+  padding: 0 16px;
   text-align: center;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .time {
-  margin-top: 80px;
+  margin-top: 32px;
   z-index: 1;
   position: relative;
   font-size: 48px;

@@ -1,4 +1,4 @@
-const staticCacheName = 'pomo-cache-v1.08';
+const staticCacheName = 'pomo-cache-v1.07';
 const filesToCache = [
     '.',
     'index.html',

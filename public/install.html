@@ -25,31 +25,19 @@
 
 <body>
   
-  <div id="pomodoro-app">
-    <div class="container">
-      <div class="time">
-        <span id="minutes">25</span>
-        <span id="colon">:</span>
-        <span id="seconds">00</span>
-      </div>
-      <div class="timer">
-        <div id="filler"></div>
-      </div>
-
-      <div class="buttons">
-        <button class="button" id="work">Work</button>
-        <button class="button" id="shortBreak">Short Break</button>
-        <button class="button" id="longBreak">Long Break</button>
-        <button class="button" id="stop">Stop</button>
-        <a class="button" href="install.html">Install</a>
-      </div>
-    </div>
-  </div>
+  <a href="index.html">go home</a>
 
   <script type="text/javascript">
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      console.log("This is running as standalone.");
+    if ('serviceWorker' in navigator) {
+      console.log('CLIENT: service worker registration in progress.');
+      navigator.serviceWorker.register('/sw.js').then(function() {
+        console.log('CLIENT: service worker registration complete.');
+      }, function() {
+        console.log('CLIENT: service worker registration failure.');
+      });
+    } else {
+      console.log('CLIENT: service worker is not supported.');
     }
-  </script>
+    </script>
   <script type="text/javascript" src="assets/main.js"></script>
 </body>
