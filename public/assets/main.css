@@ -72,3 +72,9 @@ body {
 .button:hover, .button:active, .button:focus {
   background-color: #49a0ff;
 }
+
+.go-home {
+  text-align: center;
+  font-size: 24px;
+  color: #2277bb;
+}

@@ -94,3 +94,7 @@ var pomodoro = {
 window.onload = function(){
   pomodoro.init();
 };
+
+chrome.alarms.onAlarm.addListener(function( alarm ) {
+  console.log("Got an alarm!", alarm);
+});
