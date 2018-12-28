@@ -1,10 +1,9 @@
-const staticCacheName = 'pomo-cache-v1.0';
+const staticCacheName = 'pomo-cache-v1.08';
 const filesToCache = [
     '.',
     'index.html',
     'assets/main.css',
     'assets/main.js',
-    'assets/icons/',
     'https://freesound.org/data/previews/316/316847_4939433-lq.mp3'
 ];
 
