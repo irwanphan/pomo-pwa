@@ -3,7 +3,8 @@ const filesToCache = [
     '.',
     'index.html',
     'assets/main.css',
-    'assets/main.js'
+    'assets/main.js',
+    'https://freesound.org/data/previews/316/316847_4939433-lq.mp3'
 ];
 
 self.addEventListener('install', event => {
